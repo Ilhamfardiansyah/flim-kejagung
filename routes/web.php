@@ -29,6 +29,9 @@ Route::get('/regist', [App\Http\Controllers\HomeController::class, 'regist'])->n
 
 Route::get('/coc', [App\Http\Controllers\HomeController::class, 'coc'])->name('coc');
 
+Route::get('/print', [App\Http\Controllers\HomeController::class, 'print'])->name('print');
+
+
 
 
 

@@ -23,27 +23,32 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('Dashboard.index');
+        return view('Dashboard.Index');
     }
 
     public function form_regis()
     {
-        return view('Dashboard.form_regis');
+        return view('Dashboard.FormRegis');
     }
 
     public function form_list()
     {
-        return view('Dashboard.form_list');
+        return view('Dashboard.FormList');
     }
 
     public function regist()
     {
-        return view('Dashboard.regist');
+        return view('Dashboard.Regist');
     }
 
     public function coc()
     {
-        return view('Dashboard.coc');
+        return view('Dashboard.Coc');
+    }
+
+    public function print()
+    {
+        return view('Print.CetakanRegistrasi');
     }
 
 }
