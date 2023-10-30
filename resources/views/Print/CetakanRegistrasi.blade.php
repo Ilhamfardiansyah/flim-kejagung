@@ -34,7 +34,7 @@
 
 
 <body class="A4"
-    style="font-family: Arial, sans-serif;
+    style="font-family: Times New Roman, sans-serif;
 font-size: 12pt;
 line-height: 1.5;
 margin: 0;
@@ -42,36 +42,86 @@ padding: 0;
 position:relative;">
 
     <section class="sheet padding-10mm">
-
-        {{-- <div style="margin:0 1rem; display: flex; justify-content: center; align-items:center">
+        <div style="margin:0 1rem; display: flex; justify-content: center; align-items:center">
             <table style="padding: 0.5rem 1rem; border:1px solid #000000">
                 <tr>
-                    <td class="text-center">Laboratorium Digiral Forensik Kejaksaan R.I</td>
+                    <td rowspan="3" style="padding: 0.5rem 1rem; border:1px solid #000000; height: 3rem;">
+                        <img src="{{ asset('assets/img/logos/logo-satya.png') }}" width="100">
+                    </td>
                 </tr>
                 <tr>
-                    <td><b>Registrasi Penerimaan Barang Bukti Elektronik</td>
+                    <td class="text-center" style="height: 3rem; width: 35rem">Laboratorium Digiral Forensik Kejaksaan
+                        R.I
+                    </td>
+                </tr>
+                <tr style="padding: 0.5rem 1rem; border:1px solid #000000; height: 3rem;">
+                    <td class="text-center"><b>Registrasi Penerimaan Barang Bukti Elektronik</td>
+                </tr>
+                <tr style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">
+                    <td class="text-center">FM7.4-1</td>
+                    <td class="text-center">FM7.4-1</td>
                 </tr>
             </table>
+        </div>
 
-        </div> --}}
-        <table style="margin: 25px; border:1px; padding: 0.5rem 1rem">
-            <tr>
-                <td style="width: 1em; vertical-align: top;">1.</td>
-                <td style="width: 20em; vertical-align: top;">Nama</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->nama ?? '' }}</td>
+        <table style="margin: 25px; border:0.5px; padding: 0.5rem 0.5rem">
+            <tr style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">1</td>
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">Nama Kasus</td>
+                <td style="width: 35em; vertical-align: top;"></td>
+            </tr>
+            <tr style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">2</td>
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">Jenis BBE</td>
+                <td style="width: 35em; vertical-align: top;"></td>
+            </tr>
+            <tr style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">3</td>
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">Spesifikasi BBE</td>
+                <td style="width: 35em; vertical-align: top;"></td>
+            </tr>
+            <tr style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">4</td>
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">Pemilik BBE</td>
+                <td style="width: 35em; vertical-align: top;"></td>
+            </tr>
+            <tr style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">5</td>
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">IMEI/Serial Number</td>
+                <td style="width: 35em; vertical-align: top;">IMEI 1
+                    <br>
+                    <br>
+                    IMEI 2
+                    <br>
+                    <br>
+                    S/N
+                    <br>
+                </td>
+            </tr>
+            <tr style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">6</td>
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">Parameter Security</td>
+                <td style="width: 35em; vertical-align: top;">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+            <tr style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">7</td>
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">Kondisi Ketika Diterima</td>
+                <td style="width: 35em; vertical-align: top;"></td>
+            </tr>
+            <tr style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">9</td>
+                <td style="padding: 0.5rem 1rem; border:1px solid #000000; height: 1rem;">Waktu Diterima</td>
+                <td style="width: 35em; vertical-align: top;"></td>
             </tr>
             <tr>
-                <td style="width: 1em; vertical-align: top;">2.</td>
-                <td style="width: 20em; vertical-align: top;">Pangkat</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->pangkat ?? '' }}</td>
-            </tr>
-            <tr>
-                <td style="width: 1em; vertical-align: top;">3.</td>
-                <td style="width: 20em; vertical-align: top;">NRP</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->NRP ?? '' }}</td>
+                <td style="width: 1em; vertical-align: top; height: 2px"><b>B.</td>
+                <td style="width: 20em; vertical-align: top;"><b>Verifikasi Permohonan</td>
             </tr>
             <tr>
                 <td style="width: 1em; vertical-align: top;">4.</td>
@@ -190,88 +240,12 @@ position:relative;">
 
 
         </table>
-
-    </section>
-
-    <section class="sheet padding-10mm">
-        <br>
-        <h3 style="text-align: center">SIYALEMENS</h3>
-        <br>
-        <table style="margin: 25px">
-            <tr>
-                <td style="width: 1em; vertical-align: top;">1.</td>
-                <td style="width: 20em; vertical-align: top;">Lembaga</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->siyalem->lembaga ?? '' }}</td>
-            </tr>
-            <tr>
-                <td style="width: 1em; vertical-align: top;">2.</td>
-                <td style="width: 20em; vertical-align: top;">Sikap</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->siyalem->sikap ?? '' }}</td>
-            </tr>
-            <tr>
-                <td style="width: 1em; vertical-align: top;">3.</td>
-                <td style="width: 20em; vertical-align: top;">Langkah</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->siyalem->langkah ?? '' }}</td>
-            </tr>
-            <tr>
-                <td style="width: 1em; vertical-align: top;">4.</td>
-                <td style="width: 20em; vertical-align: top;">Bangun Kepala</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->siyalem->bangun_kepala ?? '' }}</td>
-            </tr>
-            <tr>
-                <td style="width: 1em; vertical-align: top;">5.</td>
-                <td style="width: 20em; vertical-align: top;">Rambut</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->siyalem->rambut ?? '' }}</td>
-            </tr>
-            <tr>
-                <td style="width: 1em; vertical-align: top;">6.</td>
-                <td style="width: 20em; vertical-align: top;">Kening</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->siyalem->kening ?? '' }}</td>
-            </tr>
-            <tr>
-                <td style="width: 1em; vertical-align: top;">7.</td>
-                <td style="width: 20em; vertical-align: top;">Dahi</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->siyalem->dahi ?? '' }}</td>
-            </tr>
-            <tr>
-                <td style="width: 1em; vertical-align: top;">8.</td>
-                <td style="width: 20em; vertical-align: top;">Hidung</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->siyalem->hidung ?? '' }}</td>
-            </tr>
-            <tr>
-                <td style="width: 1em; vertical-align: top;">10.</td>
-                <td style="width: 20em; vertical-align: top;">Telinga</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->siyalem->telinga ?? '' }}</td>
-            </tr>
-            <tr>
-                <td style="width: 1em; vertical-align: top;; vertical-align: top;">11.</td>
-                <td style="width: 20em; vertical-align: top;">Sudah Pernah Tersangkut Urusan Polisi Militer</td>
-                <td style="vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->siyalem->urusan_polisi_militer ?? '' }}
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 1em; vertical-align: top;">12.</td>
-                <td style="width: 20em; vertical-align: top;">Keterangan Foto</td>
-                <td style="width: 1em; vertical-align: top">:</td>
-                <td style="width: 35em; vertical-align: top;">{{ $dataPegawai->siyalem->data_fotos->ket_pic ?? '' }}
-                </td>
-            </tr>
-        </table>
         <button onclick="window.print();" class="btn btn-success no-print"
             style="position: fixed; bottom:35px; right:10em;">Print</button>
         <form action="/home" method="get">
             <button class="btn btn-primary no-print" style="position: fixed; bottom:35px; right:5em;">Back</button>
         </form>
+
     </section>
 </body>
 
