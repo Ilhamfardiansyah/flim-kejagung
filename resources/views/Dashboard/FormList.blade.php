@@ -4,63 +4,29 @@
     <link href="{{ asset('vendors/flatpickr/flatpickr.min.css') }}" rel="stylesheet" />
 
     <div class="card mb-3">
-        <div class="card-body bg-light">
-            <div class="tab-content">
+        <div class="tab-content">
+            <div class="card-body bg-light">
+
+                <div class="search-box" data-list='{"valueNames":["title"]}'>
+                    <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
+                        <input class="form-control search-input fuzzy-search" type="search"
+                            placeholder="Input Nama/No. Kasus" aria-label="Search" />
+                        <span class="fas fa-search search-box-icon"></span>
+                    </form>
+                </div>
+                <br>
+
+                <div class="mb-3">
+                    <div class="input-group mb-3"><span class="input-group-text" id="basic-addon3">Nama/No.Kasus</span>
+                        <input class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3" />
+                    </div>
+                </div>
+
                 <div class="tab-pane preview-tab-pane active" role="tabpanel"
                     aria-labelledby="tab-dom-d4ebf6c5-74b4-4308-8c64-cda718c9b324"
                     id="dom-d4ebf6c5-74b4-4308-8c64-cda718c9b324">
+
                     <form>
-
-                        <div class="mb-3">
-                            <label class="form-label" for="basic-form-name">NAMA KASUS</label>
-                            <input class="form-control" id="basic-form-name" type="text" placeholder="Nama Kasus" />
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label" for="basic-form-name">Satker Pemohon</label>
-                            <select class="form-select" id="multiple-select-custom-field" data-placeholder="Satker Pemohon"
-                                multiple>
-                                <option>Satker 1</option>
-                                <option>Satker 2</option>
-                                <option>Satker 3</option>
-                                <option>Satker 4</option>
-                                <option>Satker 5</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label" for="basic-form-name">Bulan</label>
-                            <select class="form-select" id="bulanSelect" aria-label="Default select example">
-                                <option>01</option>
-                                <option>02</option>
-                                <option>03</option>
-                                <option>04</option>
-                                <option>05</option>
-                                <option>06</option>
-                                <option>07</option>
-                                <option>08</option>
-                                <option>09</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                            </select>
-                        </div>
-
-                        <script>
-                            // Mendapatkan elemen select
-                            var bulanSelect = document.getElementById("bulanSelect");
-
-                            // Mendapatkan tanggal saat ini
-                            var tanggalSekarang = new Date();
-
-                            // Mendapatkan bulan saat ini (dalam format "01", "02", dst.)
-                            var bulanSaatIni = String(tanggalSekarang.getMonth() + 1).padStart(2, '0');
-
-                            // Mengatur nilai pilihan bulan ke bulan saat ini
-                            bulanSelect.value = bulanSaatIni;
-                        </script>
-
-
                         <div class="mb-3">
                             <label class="form-label" for="basic-form-name">No. BBE</label>
                             <input class="form-control" id="basic-form-name" type="text" placeholder="No. BBE" />
@@ -123,26 +89,8 @@
                         </div>
 
                         <label class="form-label" for="timepicker1">Jam Sita</label>
-                        <input class="form-control datetimepicker" type="time" id="timepicker1" />
-
-                        <script>
-                            // Fungsi untuk mengisi input waktu dengan waktu saat ini
-                            function isiWaktuOtomatis() {
-                                var inputWaktu = document.getElementById("timepicker1");
-                                var sekarang = new Date();
-                                var jam = sekarang.getHours();
-                                var menit = sekarang.getMinutes();
-
-                                // Format jam dan menit ke dalam format "HH:mm"
-                                var waktuFormat = (jam < 10 ? "0" : "") + jam + ":" + (menit < 10 ? "0" : "") + menit;
-
-                                // Isi nilai input waktu dengan waktu saat ini
-                                inputWaktu.value = waktuFormat;
-                            }
-
-                            // Panggil fungsi saat halaman dimuat
-                            window.onload = isiWaktuOtomatis;
-                        </script>
+                        <input class="form-control datetimepicker1" type="time" id="jamsita" />
+                        <script src="{{ asset('assets/js/jamsita.js') }}"></script>
 
                         <label class="form-label" for="timepicker1">Tanggal Sita</label>
                         <input class="form-control datetimepicker" type="date" id="tanggalInput" />
@@ -169,18 +117,6 @@
                             <input class="form-control" id="basic-form-spesifikasi" type="text"
                                 placeholder="Petugas Respon" />
                         </div>
-
-                        {{-- <div class="mb-3">
-                            <label class="form-label" for="basic-form-name">JABATAN</label>
-                            <select class="form-select" id="multiple-select-custom-field3" data-placeholder="Jabatan"
-                                multiple>
-                                <option>Jabatan 1</option>
-                                <option>jabatan 2</option>
-                                <option>jabatan 3</option>
-                                <option>jabatan 4</option>
-                                <option>jabatan 5</option>
-                            </select>
-                        </div> --}}
                 </div>
             </div>
         </div>
@@ -210,7 +146,7 @@
                     id="dom-d4ebf6c5-74b4-4308-8c64-cda718c9b324">
                     <form>
 
-                        <label class="form-label" for="timepicker1">Tanggal Sita</label>
+                        <label class="form-label" for="timepicker1">Diterima Tanggal</label>
                         <input class="form-control datetimepicker" type="date" id="tanggalInput2" />
 
                         <script>
@@ -252,6 +188,36 @@
                                 <option>User 02</option>
                                 <option>User 03</option>
                             </select>
+                        </div>
+
+                        <label class="form-label" for="timepicker1">Jam Akuisisi</label>
+                        <input class="form-control datetimepicker" type="time" id="jamakusisi" />
+                        <script src="{{ asset('assets/js/jamakuisisi.js') }}"></script>
+
+                        <label class="form-label" for="timepicker1">Tanggal Akuisisi</label>
+                        <input class="form-control datetimepicker" type="date" id="tanggalAkuisisi" />
+
+                        <script>
+                            // Dapatkan elemen input tanggal
+                            var tanggalAkuisisi = document.getElementById("tanggalAkuisisi");
+
+                            // Dapatkan tanggal saat ini
+                            var currentDate = new Date();
+
+                            // Format tanggal dalam bentuk YYYY-MM-DD
+                            var year = currentDate.getFullYear();
+                            var month = (currentDate.getMonth() + 1).toString().padStart(2, "0");
+                            var day = currentDate.getDate().toString().padStart(2, "0");
+                            var formattedDate = year + "-" + month + "-" + day;
+
+                            // Setel nilai tanggal input ke tanggal saat ini
+                            tanggalAkuisisi.value = formattedDate;
+                        </script>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="basic-form-spesifikasi">Lokasi Akuisisi</label>
+                            <textarea class="form-control" id="basic-form-spesifikasi" type="Spesifikasi" placeholder="Lokasi Akuisisi"
+                                style="height: 100px"></textarea>
                         </div>
 
                         <label class="form-label" for="basic-form-name">Berhasil atau Gagal</label>
@@ -335,8 +301,98 @@
         </div>
     </div>
 
+    <div class="card mb-3">
+        <div class="card-body bg-light">
+            <div class="tab-content">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="mb-3">
+                                    <label class="form-label" for="basic-form-name">No. BBE</label>
+                                    <input class="form-control" id="basic-form-name" type="text"
+                                        placeholder="No. BBE" />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="basic-form-spesifikasi">Barang Bukti
+                                        Elektronik</label>
+                                    <textarea class="form-control" id="basic-form-spesifikasi" type="Spesifikasi" placeholder="Barang Bukti Elektronik"
+                                        style="height: 100px"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by
+                                default, until
+                                the collapse
+                                plugin adds the appropriate classes that we use to style each element. These
+                                classes control
+                                the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can
+                                modify any of
+                                this with
+                                custom CSS or overriding our default variables. It's also worth noting that just
+                                about any
+                                HTML can go
+                                within the <code>.accordion-body</code>, though the transition does limit
+                                overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by
+                                default, until the
+                                collapse
+                                plugin adds the appropriate classes that we use to style each element. These
+                                classes control
+                                the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can
+                                modify any of
+                                this with
+                                custom CSS or overriding our default variables. It's also worth noting that just
+                                about any
+                                HTML can go
+                                within the <code>.accordion-body</code>, though the transition does limit
+                                overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     {{-- Script JS --}}
     <script src="{{ asset('assets/js/realtime.js') }}"></script>
-    <script src="{{ asset('assets/js/multiple.select.js') }}"></script>
     <script src="{{ asset('assets/js/multiple.select2.js') }}"></script>
 @endsection

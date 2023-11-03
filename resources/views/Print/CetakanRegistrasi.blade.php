@@ -49,6 +49,7 @@ position:relative;">
     <section class="sheet padding-10mm">
         <div style="margin:0 1rem; display: flex; justify-content: center; align-items:center">
 
+            {{-- Kop surat --}}
             <table style="padding: 0.5rem 1rem; border:0.1px solid #000000">
                 <tr>
                     <td rowspan="3" style="padding: 0.5rem 1rem; border:0.1px solid #000000; height: 3rem;">
@@ -78,7 +79,9 @@ position:relative;">
                 </tr>
             </table>
         </div>
+        {{-- End --}}
 
+        {{-- Container --}}
         <table style="margin: 25px; border:0.5px;">
             <tr>
                 <td style="width: 0.1em; vertical-align: top; height: 1px"><b>A.</td>
@@ -139,12 +142,10 @@ position:relative;">
                 <td style="padding: 0.1rem 0.1rem; border:0.1px solid #000000; height: 1rem;">Waktu Diterima</td>
                 <td style="width: 35em; vertical-align: top;"></td>
             </tr>
-
             <tr>
                 <td colspan="3"><b>B. Verifikasi Permohonan
                 </td>
             </tr>
-
             <tr style="padding: 0.1rem 1rem; border:0.1px solid #000000; height: 1rem;">
                 <td style="padding: 0.1rem 1rem; border:0.1px solid #000000; height: 1rem;">9</td>
                 <td style="padding: 0.1rem 0.1rem; border:0.1px solid #000000; height: 1rem;">Nama Pemohon</td>
@@ -160,7 +161,6 @@ position:relative;">
                 <td style="padding: 0.1rem 0.1rem; border:0.1px solid #000000; height: 1rem;">Jabatan</td>
                 <td style="width: 35em; vertical-align: top;"></td>
             </tr>
-
             <tr>
                 <td colspan="3"><b>C. Ketersediaan Peralatan Digital Forensik, Metode Pemeriksaan, dan Sumber Daya
                         Manusia
@@ -205,9 +205,10 @@ position:relative;">
                 </td>
                 <td style="width: 35em; vertical-align: top;"></td>
             </tr>
-
         </table>
+        {{-- End --}}
 
+        {{-- Footer --}}
         <table style="margin: 25px; border:0.5px;">
             <br>
             <br>
@@ -232,6 +233,7 @@ position:relative;">
                 <td style="width: 35em; vertical-align: top;"></td>
             </tr>
         </table>
+        {{-- End --}}
 
         <button onclick="window.print();" class="btn btn-success no-print"
             style="position: fixed; bottom:35px; right:10em;">Print</button>

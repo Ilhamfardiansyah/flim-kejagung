@@ -24,13 +24,14 @@
                     id="dom-d4ebf6c5-74b4-4308-8c64-cda718c9b324">
                     <form>
                         <div class="mb-3">
-                            <label class="form-label" for="basic-form-name">NAMA KASUS</label>
-                            <input class="form-control" id="basic-form-name" type="text" placeholder="Nama Kasus" />
+                            <label class="form-label" for="nama_kasus">NAMA KASUS</label>
+                            <input class="form-control" id="nama_kasus" name="nama_kasus" type="text"
+                                placeholder="Nama Kasus" />
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label" for="basic-form-name">JENIS BBE</label>
-                            <select class="form-select" id="multiple-select-custom-field"
+                            <select class="form-select" id="multiple-select-custom-field" name="jenis_bbe"
                                 data-placeholder="Masukan Jenis BBE" multiple>
                                 <option>Mobile Forensic</option>
                                 <option>Computer Forensic</option>
@@ -39,36 +40,37 @@
 
                         <div class="mb-3">
                             <label class="form-label" for="basic-form-spesifikasi">SPESIFIKASI BBE</label>
-                            <textarea class="form-control" id="basic-form-spesifikasi" type="Spesifikasi" placeholder="Spesifikasi BBE"
-                                style="height: 100px"></textarea>
+                            <textarea class="form-control" id="basic-form-spesifikasi" name="spesifikasi_bbe" type="Spesifikasi"
+                                placeholder="Spesifikasi BBE" style="height: 100px"></textarea>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label" for="basic-form-name">PEMILIK BBE</label>
-                            <input class="form-control" id="basic-form-name" type="text" placeholder="Pemilik BBE" />
+                            <input class="form-control" id="basic-form-name" name="pemilik_bbe" type="text"
+                                placeholder="Pemilik BBE" />
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label" for="basic-form-name">IMEI/Serial Number</label>
-                            <input class="form-control" id="basic-form-name" type="text"
+                            <input class="form-control" id="basic-form-name" name="imei/sn" type="text"
                                 placeholder="IMEI/Serial Number" />
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label" for="basic-form-spesifikasi">PARAMETER SECURITY</label>
-                            <textarea class="form-control" id="basic-form-spesifikasi" type="Spesifikasi" placeholder="Parameter Security"
-                                style="height: 100px"></textarea>
+                            <textarea class="form-control" id="basic-form-spesifikasi" name="parameter" type="Spesifikasi"
+                                placeholder="Parameter Security" style="height: 100px"></textarea>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label" for="basic-form-name">KONDISI KETIKA DI TERIMA</label>
-                            <input class="form-control" id="basic-form-name" type="text"
+                            <input class="form-control" id="basic-form-name" name="kondisi" type="text"
                                 placeholder="Kondisi Ketika Di Termia" />
                         </div>
 
                         <div class="mb-3">
                             <label class="form-lable" for="waktu">WAKTU DI TERIMA</label>
-                            <input class="form-control" type="text" id="waktu" readonly>
+                            <input class="form-control" type="text" id="waktu" name="waktu" readonly>
                         </div>
                         <script src="{{ asset('assets/js/realtime.js') }}"></script>
                 </div>
@@ -102,7 +104,8 @@
                     <form>
                         <div class="mb-3">
                             <label class="form-label" for="basic-form-name">NAMA PEMOHON</label>
-                            <input class="form-control" id="basic-form-name" type="text" placeholder="Nama Pemohon" />
+                            <input class="form-control" id="basic-form-name" type="text" name="nama_pemohon"
+                                placeholder="Nama Pemohon" />
                         </div>
 
                         <div class="mb-3">
@@ -124,6 +127,18 @@
                                 <option>jabatan 3</option>
                                 <option>jabatan 4</option>
                                 <option>jabatan 5</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="basic-form-name">Satker Pemohon</label>
+                            <select class="form-select" id="multiple-select-custom-field3"
+                                data-placeholder="Satker Pemohon" multiple>
+                                <option>Satker 1</option>
+                                <option>Satker 2</option>
+                                <option>Satker 3</option>
+                                <option>Satker 4</option>
+                                <option>Satker 5</option>
                             </select>
                         </div>
                 </div>
@@ -264,4 +279,5 @@
     <script src="{{ asset('assets/js/realtime.js') }}"></script>
     <script src="{{ asset('assets/js/multiple.select.js') }}"></script>
     <script src="{{ asset('assets/js/multiple.select2.js') }}"></script>
+    <script src="{{ asset('assets/js/multiple.select3.js') }}"></script>
 @endsection
