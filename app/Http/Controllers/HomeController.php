@@ -51,4 +51,14 @@ class HomeController extends Controller
         return view('Print.CetakanRegistrasi');
     }
 
+    public function detail()
+    {
+        return view('Dashboard.detail');
+    }
+
+    public function daftar_kasus()
+    {
+        return view('Dashboard.DaftarKasus');
+    }
+
 }

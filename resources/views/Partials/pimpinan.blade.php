@@ -34,6 +34,14 @@
                     </div>
                 </a>
 
+                <!-- parent pages--><a class="nav-link {{ Route::is('daftar_kasus') ? 'active' : '' }}"
+                    href="{{ route('daftar_kasus') }}" role="button" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                        <span class="nav-link-icon"><span class="far fa-file-alt"></span></span><span
+                            class="nav-link-text ps-1">Daftar Nama Kasus</span>
+                    </div>
+                </a>
+
             </li>
             <li class="nav-item">
 

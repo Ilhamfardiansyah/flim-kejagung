@@ -13,7 +13,7 @@
                 <div class="card-body position-relative">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h3>Daftar Regis</h3>
+                            <h3>Daftar Nama Kasus</h3>
                         </div>
                     </div>
                 </div>
@@ -24,8 +24,8 @@
                         <table class="table table-bordered table-striped fs--1 mb-0">
                             <thead class="bg-200 text-900">
                                 <tr>
-                                    <th class="sort" data-sort="case">No.Kasus/Permohonan</th>
-                                    <th class="sort" data-sort="lokasi">Lokasi Respon</th>
+                                    <th class="sort" data-sort="case">No. Kasus/Permohonan</th>
+                                    <th class="sort" data-sort="total">Total BBE</th>
                                     <th class="sort" data-sort="tanggal">Tanggal Permohonan</th>
                                     <th class="sort" data-sort="status">Status</th>
                                     <th class="sort" data-sort="progres">Status Progres</th>
@@ -35,7 +35,7 @@
                             <tbody class="list">
                                 <tr>
                                     <td class="case">CASE_001_JAKARTA_10_2023</td>
-                                    <td class="lokasi">Jakarta</td>
+                                    <td class="total">2</td>
                                     <td class="tanggal">31 Oktober 2023</td>
                                     <td class="status">Diterima</td>
                                     <td class="progres">Proses Pemeriksaan</td>
@@ -48,15 +48,14 @@
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
                                                         href="#!">Detail</a><a class="dropdown-item"
-                                                        href="{{ route('detail') }}">Form
-                                                        List Case</a></div>
+                                                        href="{{ route('detail') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="case">CASE_002_JAKARTA_10_2023</td>
-                                    <td class="lokasi">Jakarta</td>
+                                    <td style="text-center" class="total">1</td>
                                     <td class="tanggal">31 Oktober 2023</td>
                                     <td class="status">Diterima</td>
                                     <td class="progres">Proses Pemeriksaan</td>
@@ -69,15 +68,14 @@
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
                                                         href="#!">Detail</a><a class="dropdown-item"
-                                                        href="{{ route('detail') }}">Form
-                                                        List Case</a></div>
+                                                        href="{{ route('detail') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="case">CASE_003_JAKARTA_10_2023</td>
-                                    <td class="lokasi">Jakarta</td>
+                                    <td class="total">3</td>
                                     <td class="tanggal">31 Oktober 2023</td>
                                     <td class="status">Diterima</td>
                                     <td class="progres">Proses Pemeriksaan</td>
@@ -90,15 +88,14 @@
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
                                                         href="#!">Detail</a><a class="dropdown-item"
-                                                        href="{{ route('detail') }}">Form
-                                                        List Case</a></div>
+                                                        href="{{ route('detail') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="case">CASE_004_JAKARTA_10_2023</td>
-                                    <td class="lokasi">Jakarta</td>
+                                    <td class="total">1</td>
                                     <td class="tanggal">31 Oktober 2023</td>
                                     <td class="status">Diterima</td>
                                     <td class="progres">Proses Pemeriksaan</td>
@@ -111,8 +108,7 @@
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
                                                         href="#!">Detail</a><a class="dropdown-item"
-                                                        href="{{ route('detail') }}">Form
-                                                        List Case</a></div>
+                                                        href="{{ route('detail') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>

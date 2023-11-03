@@ -23,13 +23,18 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/form_regis', [App\Http\Controllers\HomeController::class, 'form_regis'])->name('form_regis');
 
-Route::get('/form_list', [App\Http\Controllers\HomeController::class, 'form_list'])->name('form_list');
-
 Route::get('/regist', [App\Http\Controllers\HomeController::class, 'regist'])->name('regist');
+
+Route::get('/form_list', [App\Http\Controllers\HomeController::class, 'form_list'])->name('form_list');
 
 Route::get('/coc', [App\Http\Controllers\HomeController::class, 'coc'])->name('coc');
 
 Route::get('/print', [App\Http\Controllers\HomeController::class, 'print'])->name('print');
+
+Route::get('/detail_regist', [App\Http\Controllers\HomeController::class, 'detail'])->name('detail');
+
+Route::get('/daftar_namakasus', [App\Http\Controllers\HomeController::class, 'daftar_kasus'])->name('daftar_kasus');
+
 
 
 
