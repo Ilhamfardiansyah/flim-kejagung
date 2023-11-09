@@ -262,7 +262,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label" for="basic-form-name">Lokasi Permohonan</label>
+                        <label class="form-label" for="basic-form-name">Lokasi Respon</label>
                         <select class="form-select" aria-label="Default select example">
                             <option selected disabled>Open this select menu</option>
                             <option value="1">Jakarta</option>

@@ -19,7 +19,8 @@
                 </div>
             </div>
             <div class="tab-content">
-                <div id="tableExample" data-list='{"valueNames":["name","email","age"],"page":5,"pagination":true}'>
+                <div id="tableExample"
+                    data-list='{"valueNames":["case","total","tanggal","status","progres"],"page":5,"pagination":true}'>
                     <div class="table-responsive scrollbar">
                         <table class="table table-bordered table-striped fs--1 mb-0">
                             <thead class="bg-200 text-900">
@@ -56,7 +57,7 @@
                                 <tr>
                                     <td class="case">CASE_002_JAKARTA_10_2023</td>
                                     <td style="text-center" class="total">1</td>
-                                    <td class="tanggal">31 Oktober 2023</td>
+                                    <td class="tanggal">01 November 2023</td>
                                     <td class="status">Diterima</td>
                                     <td class="progres">Proses Pemeriksaan</td>
                                     <td class="text-end">
@@ -76,7 +77,7 @@
                                 <tr>
                                     <td class="case">CASE_003_JAKARTA_10_2023</td>
                                     <td class="total">3</td>
-                                    <td class="tanggal">31 Oktober 2023</td>
+                                    <td class="tanggal">02 November 2023</td>
                                     <td class="status">Diterima</td>
                                     <td class="progres">Proses Pemeriksaan</td>
                                     <td class="text-end">
@@ -96,8 +97,8 @@
                                 <tr>
                                     <td class="case">CASE_004_JAKARTA_10_2023</td>
                                     <td class="total">1</td>
-                                    <td class="tanggal">31 Oktober 2023</td>
-                                    <td class="status">Diterima</td>
+                                    <td class="tanggal">02 November 2023</td>
+                                    <td class="status">Ditolak</td>
                                     <td class="progres">Proses Pemeriksaan</td>
                                     <td class="text-end">
                                         <div class="dropdown font-sans-serif position-static">

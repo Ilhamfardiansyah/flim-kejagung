@@ -61,4 +61,9 @@ class HomeController extends Controller
         return view('Dashboard.DaftarKasus');
     }
 
+    public function edit_regist()
+    {
+        return view('Dashboard.detail');
+    }
+
 }

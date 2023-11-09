@@ -35,6 +35,8 @@ Route::get('/detail_regist', [App\Http\Controllers\HomeController::class, 'detai
 
 Route::get('/daftar_namakasus', [App\Http\Controllers\HomeController::class, 'daftar_kasus'])->name('daftar_kasus');
 
+Route::get('edit', [App\Http\Controllers\HomeController::class, 'edit_regist'])->name('edit_regist');
+
 
 
 

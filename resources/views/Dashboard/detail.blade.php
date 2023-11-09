@@ -270,7 +270,7 @@
                             <label class="form-label" for="basic-form-name">Lokasi Permohonan</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected disabled>Open this select menu</option>
-                                <option value="1">Jakarta</option>
+                                <option value="1" selected>Jakarta</option>
                                 <option value="2">Medan</option>
                                 <option value="3">Surabaya</option>
                                 <option value="4">Makasar</option>

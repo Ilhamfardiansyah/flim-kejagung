@@ -19,7 +19,8 @@
                 </div>
             </div>
             <div class="tab-content">
-                <div id="tableExample" data-list='{"valueNames":["name","email","age"],"page":5,"pagination":true}'>
+                <div id="tableExample"
+                    data-list='{"valueNames":["case","lokasi","tanggal","status","progres","action","action"],"page":5,"pagination":true}'>
                     <div class="table-responsive scrollbar">
                         <table class="table table-bordered table-striped fs--1 mb-0">
                             <thead class="bg-200 text-900">
@@ -47,9 +48,8 @@
                                                     class="fas fa-ellipsis-h fs--1"></span></button>
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="#!">Detail</a><a class="dropdown-item"
-                                                        href="{{ route('detail') }}">Form
-                                                        List Case</a></div>
+                                                        href="{{ route('detail') }}">Detail</a><a class="dropdown-item"
+                                                        href="{{ route('edit_regist') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>
@@ -68,9 +68,8 @@
                                                     class="fas fa-ellipsis-h fs--1"></span></button>
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="#!">Detail</a><a class="dropdown-item"
-                                                        href="{{ route('detail') }}">Form
-                                                        List Case</a></div>
+                                                        href="{{ route('detail') }}">Detail</a><a class="dropdown-item"
+                                                        href="{{ route('edit_regist') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>
@@ -89,9 +88,8 @@
                                                     class="fas fa-ellipsis-h fs--1"></span></button>
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="#!">Detail</a><a class="dropdown-item"
-                                                        href="{{ route('detail') }}">Form
-                                                        List Case</a></div>
+                                                        href="{{ route('detail') }}">Detail</a><a class="dropdown-item"
+                                                        href="{{ route('edit_regist') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>
@@ -110,9 +108,8 @@
                                                     class="fas fa-ellipsis-h fs--1"></span></button>
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="#!">Detail</a><a class="dropdown-item"
-                                                        href="{{ route('detail') }}">Form
-                                                        List Case</a></div>
+                                                        href="{{ route('detail') }}">Detail</a><a class="dropdown-item"
+                                                        href="{{ route('edit_regist') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>
