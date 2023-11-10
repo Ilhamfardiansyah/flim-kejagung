@@ -42,3 +42,4 @@ Route::get('edit', [App\Http\Controllers\HomeController::class, 'edit_regist'])-
 
 
 
+

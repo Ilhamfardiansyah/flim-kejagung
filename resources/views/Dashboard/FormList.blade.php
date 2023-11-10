@@ -301,7 +301,7 @@
         </div>
     </div>
 
-    <div class="card mb-3">
+    {{-- <div class="card mb-3">
         <div class="card-body bg-light">
             <div class="tab-content">
                 <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -390,7 +390,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     {{-- Script JS --}}
     <script src="{{ asset('assets/js/realtime.js') }}"></script>
