@@ -81,4 +81,9 @@ class HomeController extends Controller
         return view('TambahBBE');
     }
 
+    public function detail_listcase()
+    {
+        return view('Detail.ListCase');
+    }
+
 }

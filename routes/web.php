@@ -43,6 +43,8 @@ Route::get('search', [App\Http\Controllers\HomeController::class, 'search'])->na
 
 Route::get('/tambah', [App\Http\Controllers\HomeController::class, 'tambah'])->name('tambah');
 
+Route::get('/detail_listcase', [App\Http\Controllers\HomeController::class, 'detail_listcase'])->name('detail_listcase');
+
 
 
 

@@ -49,8 +49,8 @@
                                                     class="fas fa-ellipsis-h fs--1"></span></button>
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="#!">Detail</a><a class="dropdown-item"
-                                                        href="{{ route('detail') }}">Edit</a></div>
+                                                        href="{{ route('detail_listcase') }}">Detail</a><a
+                                                        class="dropdown-item" href="{{ route('detail') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>
@@ -70,8 +70,8 @@
                                                     class="fas fa-ellipsis-h fs--1"></span></button>
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="#!">Detail</a><a class="dropdown-item"
-                                                        href="{{ route('detail') }}">Edit</a></div>
+                                                        href="{{ route('detail_listcase') }}">Detail</a><a
+                                                        class="dropdown-item" href="{{ route('detail') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>
