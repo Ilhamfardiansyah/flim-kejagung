@@ -45,6 +45,8 @@ Route::get('/tambah', [App\Http\Controllers\HomeController::class, 'tambah'])->n
 
 Route::get('/detail_listcase', [App\Http\Controllers\HomeController::class, 'detail_listcase'])->name('detail_listcase');
 
+Route::get('/edit_listcase', [App\Http\Controllers\HomeController::class, 'edit_listcase'])->name('edit_listcase');
+
 
 
 

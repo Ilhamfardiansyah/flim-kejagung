@@ -50,7 +50,8 @@
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
                                                         href="{{ route('detail_listcase') }}">Detail</a><a
-                                                        class="dropdown-item" href="{{ route('detail') }}">Edit</a></div>
+                                                        class="dropdown-item" href="{{ route('edit_listcase') }}">Edit</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
@@ -71,7 +72,8 @@
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
                                                         href="{{ route('detail_listcase') }}">Detail</a><a
-                                                        class="dropdown-item" href="{{ route('detail') }}">Edit</a></div>
+                                                        class="dropdown-item" href="{{ route('edit_listcase') }}">Edit</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>

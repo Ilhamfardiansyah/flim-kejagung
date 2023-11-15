@@ -522,8 +522,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-footer border-top text-end"><a class="btn btn-falcon-default btn-sm" href="#!"><span
-                    class="fas fa-dollar-sign fs--2 me-1"></span>Refund</a><a class="btn btn-falcon-default btn-sm ms-2"
-                href="#!"><span class="fas fa-check fs--2 me-1"></span>Save changes</a></div>
+        <div class="card-footer border-top text-end"><a class="btn btn-falcon-default btn-sm ms-2"
+                href="{{ route('home') }}"><span class="fas fa-check fs--2 me-1"></span>Save changes</a></div>
     </div>
 @endsection
