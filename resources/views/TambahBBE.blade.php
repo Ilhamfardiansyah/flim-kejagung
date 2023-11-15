@@ -15,7 +15,8 @@
 
                 <div class="mb-3">
                     <div class="input-group mb-3"><span class="input-group-text" id="basic-addon3">Nama/No.Kasus</span>
-                        <input class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3" />
+                        <input class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3"
+                            value="CASE_002_JAKARTA_10_2023" />
                     </div>
                 </div>
             </div>
@@ -29,10 +30,15 @@
                     aria-labelledby="tab-dom-d4ebf6c5-74b4-4308-8c64-cda718c9b324"
                     id="dom-d4ebf6c5-74b4-4308-8c64-cda718c9b324">
 
+                    <a href="" style="margin:-12 1rem; display: flex; justify-content: center;"
+                        class="btn btn-primary">Tambah
+                        BBE</a>
+                    <br>
                     <form>
                         <div class="mb-3">
                             <label class="form-label" for="basic-form-name">No. BBE</label>
-                            <input class="form-control" id="basic-form-name" type="text" placeholder="No. BBE" />
+                            <input class="form-control" id="basic-form-name" type="text" placeholder="No. BBE"
+                                value="DDE_001_CASE_002_JAKARTA_10_2023" />
                         </div>
 
                         <div class="mb-3">

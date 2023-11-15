@@ -95,7 +95,8 @@
                 </a>
                 <ul class="nav collapse false" id="user">
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/user/profile.html" aria-expanded="false">
+                        <a class="nav-link {{ Route::is('register') ? 'active' : '' }}" href="/register"
+                            aria-expanded="false">
                             <div class="d-flex align-items-center">
                                 <span class="nav-link-text ps-1">User</span>
                             </div>

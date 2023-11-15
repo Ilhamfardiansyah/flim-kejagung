@@ -66,4 +66,19 @@ class HomeController extends Controller
         return view('Dashboard.detail');
     }
 
+    public function detail_list()
+    {
+        return view('Detail.DetailList');
+    }
+
+    public function search()
+    {
+        return view('Search');
+    }
+
+    public function tambah()
+    {
+        return view('TambahBBE');
+    }
+
 }

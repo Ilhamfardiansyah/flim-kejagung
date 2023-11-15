@@ -13,7 +13,7 @@
                 <div class="card-body position-relative">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h3>Daftar Nama Kasus</h3>
+                            <h3>CASE_001_JAKARTA_10_2023</h3>
                         </div>
                     </div>
                 </div>
@@ -25,21 +25,22 @@
                         <table class="table table-bordered table-striped fs--1 mb-0">
                             <thead class="bg-200 text-900">
                                 <tr>
-                                    <th class="sort" data-sort="case">No. Kasus/Permohonan</th>
-                                    <th class="sort" data-sort="total">Total BBE</th>
-                                    <th class="sort" data-sort="tanggal">Tanggal Permohonan</th>
-                                    <th class="sort" data-sort="status">Status</th>
-                                    <th class="sort" data-sort="progres">Status Progres</th>
+                                    <th class="sort" data-sort="case">No</th>
+                                    <th class="sort" data-sort="total">No. BBE</th>
+                                    <th class="sort" data-sort="tanggal">Barang Bukti Elektronik</th>
+                                    <th class="sort" data-sort="status">Dikuasai Oleh</th>
+                                    <th class="sort" data-sort="progres">Disita Dari</th>
                                     <th class="sort" data-sort="action">Action</th>
                                 </tr>
                             </thead>
                             <tbody class="list">
                                 <tr>
-                                    <td class="case">CASE_001_JAKARTA_10_2023</td>
-                                    <td class="total">2</td>
-                                    <td class="tanggal">31 Oktober 2023</td>
-                                    <td class="status">Diterima</td>
-                                    <td class="progres">Proses Pemeriksaan</td>
+                                    <td class="case">1</td>
+                                    <td class="total">DE_001_CASE_001_JAKARTA_10_2023</td>
+                                    <td class="tanggal">REDMI NOT 9 WARNA HIJAU (M351236), SN : 7324TDFU356, IMEI 1 :
+                                        12345678910, IMEI 2 : 10987654321</td>
+                                    <td class="status">BAMBANG</td>
+                                    <td class="progres">BAMBANG</td>
                                     <td class="text-end">
                                         <div class="dropdown font-sans-serif position-static">
                                             <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal"
@@ -48,18 +49,19 @@
                                                     class="fas fa-ellipsis-h fs--1"></span></button>
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="{{ route('detail_list') }}">Detail</a><a class="dropdown-item"
+                                                        href="#!">Detail</a><a class="dropdown-item"
                                                         href="{{ route('detail') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="case">CASE_002_JAKARTA_10_2023</td>
-                                    <td style="text-center" class="total">1</td>
-                                    <td class="tanggal">01 November 2023</td>
-                                    <td class="status">Diterima</td>
-                                    <td class="progres">Proses Pemeriksaan</td>
+                                    <td class="case">2</td>
+                                    <td class="total">DE_001_CASE_001_JAKARTA_10_2023</td>
+                                    <td class="tanggal">GALAXY NOT 22 WARNA BIRU(SM-12345), SN : 7324TSDFDDFU356, IMEI 1 :
+                                        1234567891012, IMEI 2 : 10987654321135)</td>
+                                    <td class="status">BAMBANG</td>
+                                    <td class="progres">BAMBANG</td>
                                     <td class="text-end">
                                         <div class="dropdown font-sans-serif position-static">
                                             <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal"
@@ -68,48 +70,8 @@
                                                     class="fas fa-ellipsis-h fs--1"></span></button>
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
                                                 <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="{{ route('detail_list') }}">Detail</a><a class="dropdown-item"
+                                                        href="#!">Detail</a><a class="dropdown-item"
                                                         href="{{ route('detail') }}">Edit</a></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="case">CASE_003_JAKARTA_10_2023</td>
-                                    <td class="total">3</td>
-                                    <td class="tanggal">02 November 2023</td>
-                                    <td class="status">Diterima</td>
-                                    <td class="progres">Proses Pemeriksaan</td>
-                                    <td class="text-end">
-                                        <div class="dropdown font-sans-serif position-static">
-                                            <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal"
-                                                type="button" data-bs-toggle="dropdown" data-boundary="window"
-                                                aria-haspopup="true" aria-expanded="false"><span
-                                                    class="fas fa-ellipsis-h fs--1"></span></button>
-                                            <div class="dropdown-menu dropdown-menu-end border py-0">
-                                                <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="{{ route('detail_list') }}">Detail</a><a class="dropdown-item"
-                                                        href="{{ route('detail') }}">Edit</a></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="case">CASE_004_JAKARTA_10_2023</td>
-                                    <td class="total">1</td>
-                                    <td class="tanggal">02 November 2023</td>
-                                    <td class="status">Ditolak</td>
-                                    <td class="progres">Proses Pemeriksaan</td>
-                                    <td class="text-end">
-                                        <div class="dropdown font-sans-serif position-static">
-                                            <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal"
-                                                type="button" data-bs-toggle="dropdown" data-boundary="window"
-                                                aria-haspopup="true" aria-expanded="false"><span
-                                                    class="fas fa-ellipsis-h fs--1"></span></button>
-                                            <div class="dropdown-menu dropdown-menu-end border py-0">
-                                                <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="{{ route('detail_list') }}">Detail</a><a
-                                                        class="dropdown-item" href="{{ route('detail') }}">Edit</a></div>
                                             </div>
                                         </div>
                                     </td>

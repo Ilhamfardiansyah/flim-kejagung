@@ -37,6 +37,12 @@ Route::get('/daftar_namakasus', [App\Http\Controllers\HomeController::class, 'da
 
 Route::get('edit', [App\Http\Controllers\HomeController::class, 'edit_regist'])->name('edit_regist');
 
+Route::get('detail_list', [App\Http\Controllers\HomeController::class, 'detail_list'])->name('detail_list');
+
+Route::get('search', [App\Http\Controllers\HomeController::class, 'search'])->name('search');
+
+Route::get('/tambah', [App\Http\Controllers\HomeController::class, 'tambah'])->name('tambah');
+
 
 
 
