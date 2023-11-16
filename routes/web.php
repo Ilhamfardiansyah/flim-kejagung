@@ -45,7 +45,11 @@ Route::get('/tambah', [App\Http\Controllers\HomeController::class, 'tambah'])->n
 
 Route::get('/detail_listcase', [App\Http\Controllers\HomeController::class, 'detail_listcase'])->name('detail_listcase');
 
+Route::get('/detail_coc', [App\Http\Controllers\HomeController::class, 'detail_coc'])->name('detail_coc');
+
 Route::get('/edit_listcase', [App\Http\Controllers\HomeController::class, 'edit_listcase'])->name('edit_listcase');
+
+Route::get('/print_coc', [App\Http\Controllers\HomeController::class, 'print_coc'])->name('print_coc');
 
 
 

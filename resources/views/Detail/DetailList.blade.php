@@ -48,9 +48,13 @@
                                                 aria-haspopup="true" aria-expanded="false"><span
                                                     class="fas fa-ellipsis-h fs--1"></span></button>
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
-                                                <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="{{ route('detail_listcase') }}">Detail</a><a
-                                                        class="dropdown-item" href="{{ route('edit_listcase') }}">Edit</a>
+                                                <div class="bg-white py-2">
+                                                    <a class="dropdown-item"
+                                                        href="{{ route('detail_listcase') }}">Detail</a>
+                                                    <a class="dropdown-item" href="{{ route('detail_coc') }}">Detail
+                                                        COC</a>
+                                                    <a class="dropdown-item" href="{{ route('print_coc') }}">Print</a>
+                                                    <a class="dropdown-item" href="{{ route('edit_listcase') }}">Edit</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -70,9 +74,13 @@
                                                 aria-haspopup="true" aria-expanded="false"><span
                                                     class="fas fa-ellipsis-h fs--1"></span></button>
                                             <div class="dropdown-menu dropdown-menu-end border py-0">
-                                                <div class="bg-white py-2"><a class="dropdown-item"
-                                                        href="{{ route('detail_listcase') }}">Detail</a><a
-                                                        class="dropdown-item" href="{{ route('edit_listcase') }}">Edit</a>
+                                                <div class="bg-white py-2">
+                                                    <a class="dropdown-item"
+                                                        href="{{ route('detail_listcase') }}">Detail</a>
+                                                    <a class="dropdown-item" href="{{ route('detail_coc') }}">Detail
+                                                        COC</a>
+                                                    <a class="dropdown-item" href="{{ route('print_coc') }}">Print</a>
+                                                    <a class="dropdown-item" href="{{ route('edit_listcase') }}">Edit</a>
                                                 </div>
                                             </div>
                                         </div>

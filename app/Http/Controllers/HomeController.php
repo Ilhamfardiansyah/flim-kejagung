@@ -91,4 +91,14 @@ class HomeController extends Controller
         return view('Edit.ListCase');
     }
 
+    public function detail_coc()
+    {
+        return view('Detail.Coc');
+    }
+
+    public function print_coc()
+    {
+        return view('Print.Coc');
+    }
+
 }
