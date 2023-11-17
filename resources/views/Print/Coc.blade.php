@@ -62,13 +62,11 @@ position:relative;">
                             R.I
                     </td>
                 </tr>
-                <tr style="padding: 0.5rem 1rem; border:0.1px solid #000000; height: 3rem;">
-                    <td colspan="5" class="text-center">
-                        <h5><br>
-                            Kontrol Pemeriksaan Barang Bukti Elektronik
-                            <br>
-                            Chain Of Custody (COC)
-
+                <tr style="padding: 0.5rem 2rem; border:0.1px solid #000000; height: 3rem; text-align: center;">
+                    <td colspan="5">
+                        <h5><b>Kontrol Pemeriksaan Barang Bukti Elektronik
+                                <br>
+                                Chain Of Custody (COC)
                     </td>
                 </tr>
                 <tr style="padding: 0.1rem 1rem; border:0.1px solid #000000; height: 1rem;">
@@ -87,19 +85,19 @@ position:relative;">
         {{-- Container --}}
         <table style="margin: 25px; border:0.5px;">
             <tr style="padding: 0.1rem 1rem;; height: 100%;">
-                <td style="padding: 0rem 0.5rem; width: 6.5rem;">Nama Case</td>
+                <td style="padding: 0rem 0.1rem height: 2rem; width: 6.5rem; text-align: left;">Nama Case</td>
                 <td style="padding: 0.1rem 0.1rem; height: 1rem;">:</td>
                 <td style="padding: 0.1rem 0.1rem;; height: 1rem;">
                     CASE 001</td>
             </tr>
             <tr style="padding: 0.1rem 1rem;; height: 100%;">
-                <td style="padding: 0rem; height: 2rem;">Nama BBE</td>
+                <td style="padding: 0rem; height: 2rem; text-align: left;">Nama BBE</td>
                 <td style="padding: 0.1rem 0.1rem; height: 1rem;">:</td>
                 <td style="padding: 0.1rem 0.1rem;; height: 1rem;">
                     REDMI NOTE 9 WARNA HIJAU (M2003), SN : 76E7CE0C0, IMEI 1 : 212345, IMEI 2 : 123456</td>
             </tr>
             <tr style="padding: 0.1rem 1rem;; height: 100%;">
-                <td style="padding: 0rem 1rem; height: 2rem;">No. BBE</td>
+                <td style="padding: 0rem 0. 1rem; height: 2rem; text-align: left;">No. BBE</td>
                 <td style="padding: 0.1rem 0.1rem; height: 1rem;">:</td>
                 <td style="padding: 0.1rem 0.1rem; height: 1rem;">
                     DE_001_CASE_001_JAKARTA_10_2023 </td>
@@ -110,20 +108,34 @@ position:relative;">
 
         <table style="margin: 25px; border:0.5px;">
             <tr style="padding: 0.1rem 1rem; border:0.1px solid #000000; height: 100%;">
-                <td style="padding: 0rem 1rem; border:0.5px solid #000000; height: 2rem;">No</td>
+                <td style="width: 4rem; padding: 0rem 1rem; border:0.5px solid #000000; height: 2rem;">No</td>
                 <td style="padding: 0.1rem 2rem; border:0.1px solid #000000; height: 1rem;">Tanggal/Jam</td>
                 <td style="padding: 0.1rem 1.5rem; border:0.1px solid #000000; height: 1rem;" class="text-center">
                     Analisis</td>
                 <td style="padding: 0.1rem 7rem; border:0.1px solid #000000; height: 1rem;">Tindakan</td>
                 <td style="padding: 0.1rem 2rem; border:0.1px solid #000000; height: 1rem;">Paraf</td>
             </tr>
-            <tr style="padding: 0.1rem 1rem; border:0.1px solid #000000; height: 1rem;">
-                <td rowspan="50" style="padding: 0rem 1rem; border:0.5px solid #000000; height: 45rem;"></td>
-                <td style="padding: 0.1rem 1.5rem; border:0.1px solid #000000; height: 45rem;"></td>
-                <td style="padding: 0.1rem 0.1rem; border:0.1px solid #000000; height: 45rem;" class="text-center"></td>
-                <td style="padding: 0.1rem 7rem; border:0.1px solid #000000; height: 45rem;"></td>
-                <td style="padding: 0.1rem 2rem; border:0.1px solid #000000; height: 45rem;"></td>
+            <tr style="padding: 0.1rem 1rem; border: 0.1px solid #000000;">
+                <td style="width: 4rem; padding: 0rem 1rem; border: 0.5px solid #000000; overflow: auto;"
+                    class="text-center">
+                    1
+                </td>
+                <td style="padding: 0.1rem 0.1rem; border: 0.1px solid #000000; height: 3rem;">
+                    11/10/2023, 17.00<br>
+                    11/10/2023, 20.00
+                </td>
+                <td style="padding: 0.1rem 0.1rem; border: 0.1px solid #000000; height: 3rem;" class="text-center">YULI
+                </td>
+                <td style="padding: 0.1rem 0.1rem; border: 0.1px solid #000000; height: 3rem;">
+                    -MELEPAS PASSWORD<br>
+                    -MASUK DEV MODE<br>
+                    -CONNECT UFED<br>
+                    -START DENGAN METODE LOGICAL<br>
+                    -FINISH
+                </td>
+                <td style="padding: 0.1rem 2rem; border: 0.1px solid #000000;"></td>
             </tr>
+
         </table>
         {{-- End --}}
 

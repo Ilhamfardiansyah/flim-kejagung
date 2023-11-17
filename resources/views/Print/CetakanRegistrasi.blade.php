@@ -220,8 +220,8 @@ position:relative;">
                 <td style="padding: 0.1rem 5rem; border:0.5px solid #ffffff; height: 1rem;"></td>
                 <td style="padding: 0.1rem 0.01rem; border:0.1px solid #000000; height: 1rem;"></td>
                 <td style="padding: 0.1rem 3rem; border:0.1px solid #000000; height: 1rem;">Pemohonan</td>
-                <td style="padding: 0.1rem 3rem; border:0.1px solid #000000;">Tanggapan Respon
-                </td>
+                <td style="padding: 0.1rem 3rem; border:0.1px solid #000000; height: 1rem;" class="text-center">
+                    Tanggapan Respon</td>
                 <td style="width: 35em; vertical-align: top;" class="text-center">Mengetahui, Kepala Laboratorium</td>
             </tr>
             <tr style="padding: 0.1rem 1rem; border:0.1px solid #000000; height: 1rem;">
