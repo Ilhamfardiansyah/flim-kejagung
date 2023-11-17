@@ -51,6 +51,8 @@ Route::get('/edit_listcase', [App\Http\Controllers\HomeController::class, 'edit_
 
 Route::get('/print_coc', [App\Http\Controllers\HomeController::class, 'print_coc'])->name('print_coc');
 
+Route::get('/ba_akuisisi', [App\Http\Controllers\HomeController::class, 'ba_akuisisi'])->name('ba_akuisisi');
+
 
 
 

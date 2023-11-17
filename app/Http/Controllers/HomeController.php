@@ -101,4 +101,9 @@ class HomeController extends Controller
         return view('Print.Coc');
     }
 
+    public function ba_akuisisi()
+    {
+        return view('Print.Ba');
+    }
+
 }
