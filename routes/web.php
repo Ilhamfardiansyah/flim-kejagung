@@ -53,8 +53,11 @@ Route::get('/print_coc', [App\Http\Controllers\HomeController::class, 'print_coc
 
 Route::get('/ba_akuisisi', [App\Http\Controllers\HomeController::class, 'ba_akuisisi'])->name('ba_akuisisi');
 
+Route::get('akuisisi', [App\Http\Controllers\HomeController::class, 'akuisisi'])-> name('akuisisi');
 
+Route::get('search_ba', [App\Http\Controllers\HomeController::class, 'search_ba'])->name('search_ba');
 
+Route::get('laporan', [App\Http\Controllers\HomeController::class, 'laporan'])->name('laporan');
 
 
 

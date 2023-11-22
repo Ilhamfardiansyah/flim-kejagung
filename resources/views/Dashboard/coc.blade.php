@@ -9,6 +9,12 @@ use Carbon\Carbon;
     <div class="card mb-3">
         <div class="tab-content">
             <div class="card-body bg-light">
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Input Nama/No. Kasus" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <a type="button" class="btn btn-outline-primary">Search</a>
+                </div>
+                <br>
                 <div class="mb-3">
                     <div class="input-group mb-3"><span class="input-group-text" id="basic-addon3">Nama/No.Kasus</span>
                         <input class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3" />
@@ -69,7 +75,7 @@ use Carbon\Carbon;
         <div id="kontainerForm"></div>
 
         <button id="tambahFormButton" class="btn btn-primary">Tambah BBE</button>
-        <button class="btn btn-success">Save</button>
+        <a href="{{ route('print_coc') }}" class="btn btn-success">Save</a>
 
         <script>
             $(document).ready(function() {

@@ -106,4 +106,19 @@ class HomeController extends Controller
         return view('Print.Ba');
     }
 
+    public function akuisisi()
+    {
+        return view('Dashboard.Akuisisi');
+    }
+
+    public function search_ba()
+    {
+        return view('SearchBa');
+    }
+
+    public function laporan()
+    {
+        return view('Laporan');
+    }
+
 }
