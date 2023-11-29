@@ -10,6 +10,14 @@
                     </div>
                 </a>
 
+                <!-- parent pages--><a class="nav-link {{ Route::is('form_list') ? 'active' : '' }}"
+                    href="{{ route('form_list') }}" role="button" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                        <span class="nav-link-icon"><span class="fab fa-trello"></span></span><span
+                            class="nav-link-text ps-1">Form List Case</span>
+                    </div>
+                </a>
+
                 <!-- parent pages--><a class="nav-link {{ Route::is('form_regis') ? 'active' : '' }}"
                     href="{{ route('form_regis') }}" role="button">
                     <div class="d-flex align-items-center">
@@ -23,14 +31,6 @@
                     <div class="d-flex align-items-center">
                         <span class="nav-link-icon"><span class="fas fa-comments"></span></span><span
                             class="nav-link-text ps-1">Daftar Regis Masuk</span>
-                    </div>
-                </a>
-
-                <!-- parent pages--><a class="nav-link {{ Route::is('form_list') ? 'active' : '' }}"
-                    href="{{ route('form_list') }}" role="button" aria-expanded="false">
-                    <div class="d-flex align-items-center">
-                        <span class="nav-link-icon"><span class="fab fa-trello"></span></span><span
-                            class="nav-link-text ps-1">Form List Case</span>
                     </div>
                 </a>
 
