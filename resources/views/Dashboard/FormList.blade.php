@@ -1,6 +1,65 @@
 @extends('Layouts.main')
 
 @section('content')
+    <style>
+        #video {
+            border: 1px solid black;
+            box-shadow: 2px 2px 3px black;
+            width: 320px;
+            height: 240px;
+        }
+
+        #photo {
+            border: 1px solid black;
+            box-shadow: 2px 2px 3px black;
+            width: 320px;
+            height: 240px;
+        }
+
+        #canvas {
+            position: fixed;
+            display: none;
+            top: 50px;
+            left: 50px;
+        }
+
+        .camera {
+            width: 340px;
+            display: inline-block;
+        }
+
+        .output {
+            position: relative;
+            display: flex;
+            top: 50px;
+            right: 50px;
+            justify-content: flex-end;
+            gap: 10px;
+            width: 340px;
+            vertical-align: top;
+        }
+
+        #startbutton {
+            display: block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            bottom: 32px;
+            background-color: rgba(0, 150, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+            font-family: "Lucida Grande", "Arial", sans-serif;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .contentarea {
+            font-size: 16px;
+            font-family: "Lucida Grande", "Arial", sans-serif;
+            width: 760px;
+        }
+    </style>
+
     <link href="{{ asset('vendors/flatpickr/flatpickr.min.css') }}" rel="stylesheet" />
 
     <div class="card mb-3">
@@ -13,7 +72,6 @@
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="mb-3">
             <div class="row justify-content-end">
@@ -61,8 +119,27 @@
                             <label class="form-label" for="basic-form-spesifikasi">IMEI/Serial Number</label>
                             <textarea class="form-control" id="basic-form-spesifikasi" type="Spesifikasi" placeholder="Barang Bukti Elektronik"></textarea>
                         </div>
-                        {{-- Verifikasi permohonan --}}
 
+                        <label class="form-label" for="basic-form-spesifikasi">Foto BBE Depan</label>
+                        <div class="contentarea">
+                            <div class="camera">
+                                <video id="video">Video stream not available.</video>
+                                <button id="startbutton">Take photo</button>
+                            </div>
+                        </div>
+
+                        <canvas id="canvas"> </canvas>
+
+                        <div class="contetarea">
+                            <img id="photo1" width="320" height="240">
+                            <img id="photo2" width="320" height="240">
+                        </div>
+
+                        <input type="button" onclick="newFunction()" value="Reset">
+
+                        <script src="{{ asset('assets/js/camera.js') }}"></script>
+
+                        {{-- Verifikasi permohonan --}}
                         <div class="card mb-3">
                             <div class="bg-holder d-none d-lg-block bg-card"
                                 style="
@@ -115,7 +192,8 @@
                                             <script src="{{ asset('assets/js/jamsita.js') }}"></script>
 
                                             <label class="form-label" for="timepicker1">Tanggal Sita</label>
-                                            <input class="form-control datetimepicker" type="date" id="tanggalInput" />
+                                            <input class="form-control datetimepicker" type="date"
+                                                id="tanggalInput" />
 
                                             <script>
                                                 // Dapatkan elemen input tanggal
@@ -195,7 +273,8 @@
                                             </script>
 
                                             <div class="mb-3">
-                                                <label class="form-label" for="basic-form-name">Petugas Penerima</label>
+                                                <label class="form-label" for="basic-form-name">Petugas
+                                                    Penerima</label>
                                                 <select class="form-select" id="bulanSelect"
                                                     aria-label="Default select example">
                                                     <option>User 01</option>
@@ -253,7 +332,8 @@
                                                     style="height: 100px"></textarea>
                                             </div>
 
-                                            <label class="form-label" for="basic-form-name">Berhasil atau Gagal</label>
+                                            <label class="form-label" for="basic-form-name">Berhasil atau
+                                                Gagal</label>
                                             <div class="mb-3">
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio"
