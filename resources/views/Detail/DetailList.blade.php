@@ -53,6 +53,8 @@
                                                         href="{{ route('detail_listcase') }}">Detail</a>
                                                     <a class="dropdown-item" href="{{ route('detail_coc') }}">Detail
                                                         COC</a>
+                                                    <a class="dropdown-item" href="{{ route('coc') }}">Form COC</a>
+                                                    <a class="dropdown-item" href="{{ route('akuisisi') }}">BA Akuisisi</a>
                                                     <a class="dropdown-item" href="{{ route('print_coc') }}">Print</a>
                                                     <a class="dropdown-item" href="{{ route('edit_listcase') }}">Edit</a>
                                                 </div>
@@ -79,6 +81,8 @@
                                                         href="{{ route('detail_listcase') }}">Detail</a>
                                                     <a class="dropdown-item" href="{{ route('detail_coc') }}">Detail
                                                         COC</a>
+                                                    <a class="dropdown-item" href="{{ route('coc') }}">Form COC</a>
+                                                    <a class="dropdown-item" href="{{ route('akuisisi') }}">BA Akuisisi</a>
                                                     <a class="dropdown-item" href="{{ route('print_coc') }}">Print</a>
                                                     <a class="dropdown-item" href="{{ route('edit_listcase') }}">Edit</a>
                                                 </div>

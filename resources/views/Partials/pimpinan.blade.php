@@ -45,26 +45,26 @@
             </li>
             <li class="nav-item">
 
-                <!-- parent pages--><a class="nav-link {{ Route::is('coc') ? 'active' : '' }}"
+                {{-- <!-- parent pages--><a class="nav-link {{ Route::is('coc') ? 'active' : '' }}"
                     href="{{ route('coc') }}" role="button" aria-expanded="false">
                     <div class="d-flex align-items-center">
                         <span class="nav-link-icon"><span class="fas fa-flag"></span></span><span
                             class="nav-link-text ps-1">Form CoC</span>
                     </div>
-                </a>
+                </a> --}}
                 <!-- parent pages--><a class="nav-link" href="pages/landing.html" role="button" aria-expanded="false">
                     <div class="d-flex align-items-center">
                         <span class="nav-link-icon"><span class="fas fa-globe"></span></span><span
                             class="nav-link-text ps-1">Daftar CoC</span>
                     </div>
                 </a>
-                <!-- parent pages--><a class="nav-link {{ Route::is('akuisisi') ? 'active' : '' }}"
+                {{-- <!-- parent pages--><a class="nav-link {{ Route::is('akuisisi') ? 'active' : '' }}"
                     href="{{ route('akuisisi') }}" role="button" aria-expanded="false">
                     <div class="d-flex align-items-center">
                         <span class="nav-link-icon"><span class="fas fa-handshake"></span></span><span
                             class="nav-link-text ps-1">BA Akuisisi</span>
                     </div>
-                </a>
+                </a> --}}
                 <!-- parent pages--><a class="nav-link dropdown-indicator" href="#authentication" role="button"
                     data-bs-toggle="collapse" aria-expanded="false" aria-controls="authentication">
                     <div class="d-flex align-items-center">
