@@ -18,13 +18,13 @@
                     </div>
                 </a>
 
-                <!-- parent pages--><a class="nav-link {{ Route::is('form_regis') ? 'active' : '' }}"
+                {{-- <!-- parent pages--><a class="nav-link {{ Route::is('form_regis') ? 'active' : '' }}"
                     href="{{ route('form_regis') }}" role="button">
                     <div class="d-flex align-items-center">
                         <span class="nav-link-icon"><span class="fas fa-calendar-alt"></span></span><span
                             class="nav-link-text ps-1">Form Regis</span>
                     </div>
-                </a>
+                </a> --}}
 
                 <!-- parent pages--><a class="nav-link {{ Route::is('regist') ? 'active' : '' }}"
                     href="{{ route('regist') }}" role="button" aria-expanded="false">

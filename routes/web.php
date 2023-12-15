@@ -59,6 +59,8 @@ Route::get('search_ba', [App\Http\Controllers\HomeController::class, 'search_ba'
 
 Route::get('laporan', [App\Http\Controllers\HomeController::class, 'laporan'])->name('laporan');
 
+Route::get('foto', [App\Http\Controllers\HomeController::class, 'foto'])->name('foto');
+
 
 
 

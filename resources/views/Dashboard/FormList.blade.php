@@ -66,7 +66,8 @@
         <div class="tab-content">
             <div class="card-body bg-light">
                 <div class="input-group">
-                    <input type="search" class="form-control rounded" aria-label="Search" aria-describedby="search-addon" />
+                    <input type="search" class="form-control rounded" aria-label="Search" placeholder="Input Nama/No Kasus"
+                        aria-describedby="search-addon" />
                     <a type="button" href="{{ route('search') }}" class="btn btn-outline-primary">Simpan</a>
                 </div>
             </div>
@@ -81,22 +82,6 @@
                     id="dom-d4ebf6c5-74b4-4308-8c64-cda718c9b324">
 
                     <form>
-
-                        <div class="card mb-3">
-                            <div class="bg-holder d-none d-lg-block bg-card"
-                                style="
-        background-image: url(../../../assets/img/icons/spot-illustrations/corner-4.png);">
-                            </div>
-                            <!--/.bg-holder-->
-
-                            <div class="card-body position-relative">
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <h3>BBE 1</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="mb-3">
                             <label class="form-label" for="basic-form-name">No. BBE</label>
@@ -224,6 +209,19 @@
                                             </select>
                                         </div>
 
+                                        <h4 class="text-center">Kondisi/Keterangan</h4>
+
+                                        <div class="mb-3">
+                                            <label class="form-label"
+                                                for="basic-form-spesifikasi">Kondisi/Keterangan</label>
+                                            <textarea class="form-control" id="basic-form-spesifikasi" type="Spesifikasi" placeholder="Barang Bukti Elektronik"></textarea>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label" for="basic-form-spesifikasi">Parameter</label>
+                                            <textarea class="form-control" id="basic-form-spesifikasi" type="Spesifikasi" placeholder="Barang Bukti Elektronik"></textarea>
+                                        </div>
+
                                         <label class="form-label" for="timepicker1">Jam Sita</label>
                                         <input class="form-control datetimepicker1" type="time" id="jamsita" />
 
@@ -281,11 +279,18 @@
                                             </select>
                                         </div>
 
+                                        <h4 class="text-center">Tools & Metode Akuisi</h4>
+
                                         <div class="mb-3">
-                                            <label class="form-label" for="basic-form-spesifikasi">Tools & Metode
-                                                Akuisisi</label>
-                                            <textarea class="form-control" id="basic-form-spesifikasi" type="Spesifikasi" placeholder="Tools & Metode Akuisisi"
-                                                style="height: 100px"></textarea>
+                                            <label class="form-label" for="basic-form-spesifikasi">Tools</label>
+                                            <input class="form-control" id="basic-form-spesifikasi" type="Spesifikasi"
+                                                placeholder="Tools & Metode Akuisisi" />
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label" for="basic-form-spesifikasi">Metode Akusisi</label>
+                                            <input class="form-control" id="basic-form-spesifikasi" type="Spesifikasi"
+                                                placeholder="Tools & Metode Akuisisi" />
                                         </div>
 
                                         <div class="mb-3">
@@ -400,7 +405,7 @@
     </div>
 
     <br>
-    <button class="btn btn-success">Simpan</button>
+    <a href="{{ route('detail_list') }}" class="btn btn-success">Simpan</a>
     <a id="tambah-bbe" class="btn btn-primary">Tambah BBE</a>
 
 
@@ -547,6 +552,19 @@
                                                         </select>
                                                     </div>
 
+                                                    <h4 class="text-center">Kondisi/Keterangan</h4>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label"
+                                                            for="basic-form-spesifikasi">Kondisi/Keterangan</label>
+                                                        <textarea class="form-control" id="basic-form-spesifikasi" type="Spesifikasi" placeholder="Barang Bukti Elektronik"></textarea>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="basic-form-spesifikasi">Parameter</label>
+                                                        <textarea class="form-control" id="basic-form-spesifikasi" type="Spesifikasi" placeholder="Barang Bukti Elektronik"></textarea>
+                                                    </div>
+
                                                     <label class="form-label" for="timepicker1">Jam Sita</label>
                                                     <input class="form-control datetimepicker1" type="time" id="jamsita" />
 
@@ -604,12 +622,20 @@
                                                         </select>
                                                     </div>
 
+                                                                <h4 class="text-center">Tools & Metode Akuisi</h4>
+
                                                     <div class="mb-3">
-                                                        <label class="form-label" for="basic-form-spesifikasi">Tools & Metode
-                                                            Akuisisi</label>
-                                                        <textarea class="form-control" id="basic-form-spesifikasi" type="Spesifikasi" placeholder="Tools & Metode Akuisisi"
-                                                            style="height: 100px"></textarea>
+                                                        <label class="form-label" for="basic-form-spesifikasi">Tools</label>
+                                                        <input class="form-control" id="basic-form-spesifikasi" type="Spesifikasi"
+                                                            placeholder="Tools & Metode Akuisisi" />
                                                     </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="basic-form-spesifikasi">Metode Akusisi</label>
+                                                        <input class="form-control" id="basic-form-spesifikasi" type="Spesifikasi"
+                                                            placeholder="Tools & Metode Akuisisi" />
+                                                    </div>
+
 
                                                     <div class="mb-3">
                                                         <label class="form-label" for="basic-form-name">Petugas Akuisi</label>

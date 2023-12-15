@@ -28,8 +28,8 @@
                                     <th class="sort" data-sort="case">No</th>
                                     <th class="sort" data-sort="total">No. BBE</th>
                                     <th class="sort" data-sort="tanggal">Barang Bukti Elektronik</th>
-                                    <th class="sort" data-sort="status">Dikuasai Oleh</th>
-                                    <th class="sort" data-sort="progres">Disita Dari</th>
+                                    <th class="sort" data-sort="status">Foto Depan</th>
+                                    <th class="sort" data-sort="progres">Foto Belakang</th>
                                     <th class="sort" data-sort="action">Action</th>
                                 </tr>
                             </thead>
@@ -37,8 +37,9 @@
                                 <tr>
                                     <td class="case">1</td>
                                     <td class="total">DE_001_CASE_001_JAKARTA_10_2023</td>
-                                    <td class="tanggal">REDMI NOT 9 WARNA HIJAU (M351236), SN : 7324TDFU356, IMEI 1 :
-                                        12345678910, IMEI 2 : 10987654321</td>
+                                    <td class="tanggal"><a href="{{ route('foto') }}"> NOT 9 WARNA HIJAU (M351236),
+                                            SN : 7324TDFU356, IMEI 1 :
+                                            12345678910, IMEI 2 : 10987654321</a></td>
                                     <td class="status">BAMBANG</td>
                                     <td class="progres">BAMBANG</td>
                                     <td class="text-end">
@@ -51,6 +52,8 @@
                                                 <div class="bg-white py-2">
                                                     <a class="dropdown-item"
                                                         href="{{ route('detail_listcase') }}">Detail</a>
+                                                    <a class="dropdown-item" href="{{ route('form_regis') }}">Form
+                                                        Regis</a>
                                                     <a class="dropdown-item" href="{{ route('detail_coc') }}">Detail
                                                         COC</a>
                                                     <a class="dropdown-item" href="{{ route('coc') }}">Form COC</a>
@@ -64,9 +67,10 @@
                                 </tr>
                                 <tr>
                                     <td class="case">2</td>
-                                    <td class="total">DE_001_CASE_001_JAKARTA_10_2023</td>
-                                    <td class="tanggal">GALAXY NOT 22 WARNA BIRU(SM-12345), SN : 7324TSDFDDFU356, IMEI 1 :
-                                        1234567891012, IMEI 2 : 10987654321135)</td>
+                                    <td class="total">DE_002_CASE_001_JAKARTA_10_2023</td>
+                                    <td class="tanggal"><a href="{{ route('foto') }}">GALAXY NOT 22 WARNA BIRU(SM-12345), SN
+                                            : 7324TSDFDDFU356, IMEI 1 :
+                                            1234567891012, IMEI 2 : 10987654321135)</a></td>
                                     <td class="status">BAMBANG</td>
                                     <td class="progres">BAMBANG</td>
                                     <td class="text-end">

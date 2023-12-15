@@ -25,7 +25,13 @@
                     <div class="mb-3">
                         <label class="form-label" for="nama_kasus">NAMA KASUS</label>
                         <input class="form-control" id="nama_kasus" name="nama_kasus" type="text"
-                            placeholder="Nama Kasus" />
+                            placeholder="Nama Kasus" value="CASE_001_JAKARTA_10_2023" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="nama_kasus">No.BBE</label>
+                        <input class="form-control" id="nama_kasus" name="nama_kasus" type="text"
+                            placeholder="Nama Kasus" value="DE_001_CASE_001_JAKARTA_10_2023" />
                     </div>
 
                     <div class="mb-3">
@@ -40,19 +46,20 @@
                     <div class="mb-3">
                         <label class="form-label" for="basic-form-spesifikasi">SPESIFIKASI BBE</label>
                         <textarea class="form-control" id="basic-form-spesifikasi" name="spesifikasi_bbe" type="Spesifikasi"
-                            placeholder="Spesifikasi BBE" style="height: 100px"></textarea>
+                            placeholder="Spesifikasi BBE" style="height: 100px">REDMI NOTE 9 WARNA HIJAU (M351236)</textarea>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label" for="basic-form-name">PEMILIK BBE</label>
                         <input class="form-control" id="basic-form-name" name="pemilik_bbe" type="text"
-                            placeholder="Pemilik BBE" />
+                            placeholder="Pemilik BBE" value="Bambang" />
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label" for="basic-form-name">IMEI/Serial Number</label>
                         <input class="form-control" id="basic-form-name" name="imei/sn" type="text"
-                            placeholder="IMEI/Serial Number" />
+                            placeholder="IMEI/Serial Number"
+                            value="SN : 7324TDFU356, MEI 1 : 12345678910, IMEI 2 : 10987654321" />
                     </div>
 
                     <div class="mb-3">
@@ -64,7 +71,9 @@
                     <div class="mb-3">
                         <label class="form-label" for="basic-form-name">KONDISI KETIKA DI TERIMA</label>
                         <input class="form-control" id="basic-form-name" name="kondisi" type="text"
-                            placeholder="Kondisi Ketika Di Termia" />
+                            placeholder="Kondisi Ketika Di Termia"
+                            value="NYALA, LAYAR RETAK, SIM : 08123456789
+                            " />
                     </div>
 
                     <div class="mb-3">
@@ -88,7 +97,7 @@
         <div class="card-body position-relative">
             <div class="row">
                 <div class="col-lg-8">
-                    <h3>B. Ferivikasi Permohonan</h3>
+                    <h3>B. Verivikasi Permohonan</h3>
                 </div>
             </div>
         </div>

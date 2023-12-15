@@ -83,33 +83,6 @@
                     </select>
                 </div>
 
-
-                <div class="mb-3">
-                    <label class="form-label" for="basic-form-name">Hari</label>
-                    <select class="form-select" id="bulanSelect" aria-label="Default select example">
-                        <option>Senin</option>
-                        <option>Selasa</option>
-                        <option>Rabu</option>
-                        <option>Kamis</option>
-                        <option>Jum'at</option>
-                        <option>Sabtu</option>
-                        <option>Minggu</option>
-                    </select>
-                </div>
-
-                <label class="form-label" for="timepicker1">Tanggal</label>
-                <input class="form-control datetimepicker1" type="time" />
-                <script src="{{ asset('assets/js/jamsita.js') }}"></script>
-
-                <div class="mb-3">
-                    <label class="form-label" for="basic-form-name">Nama Analis</label>
-                    <select class="form-select" id="bulanSelect" aria-label="Default select example">
-                        <option>Analis 01</option>
-                        <option>Analis 02</option>
-                        <option>Analis 03</option>
-                    </select>
-                </div>
-
                 <div class="mb-3">
                     <label class="form-label" for="basic-form-name">Pangkat</label>
                     <input class="form-control" id="basic-form-name" type="text" />

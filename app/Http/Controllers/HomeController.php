@@ -121,4 +121,9 @@ class HomeController extends Controller
         return view('Laporan');
     }
 
+    public function foto()
+    {
+        return view('Detail.Foto');
+    }
+
 }
