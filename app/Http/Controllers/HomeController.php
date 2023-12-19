@@ -33,7 +33,7 @@ class HomeController extends Controller
 
     public function form_list()
     {
-        return view('Dashboard.formlist');
+        return view('Dashboard.FormList');
     }
 
     public function regist()
