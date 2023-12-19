@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('Dashboard.index');
+        return view('Dashboard.Index');
     }
 
     public function form_regis()
@@ -38,12 +38,12 @@ class HomeController extends Controller
 
     public function regist()
     {
-        return view('Dashboard.regist');
+        return view('Dashboard.Regist');
     }
 
     public function coc()
     {
-        return view('Dashboard.coc');
+        return view('Dashboard.Coc');
     }
 
     public function print()
@@ -53,7 +53,7 @@ class HomeController extends Controller
 
     public function detail()
     {
-        return view('Dashboard.detail');
+        return view('Dashboard.Detail');
     }
 
     public function daftar_kasus()
@@ -63,7 +63,7 @@ class HomeController extends Controller
 
     public function edit_regist()
     {
-        return view('Dashboard.detail');
+        return view('Dashboard.Detail');
     }
 
     public function detail_list()
@@ -88,27 +88,27 @@ class HomeController extends Controller
 
     public function edit_listcase()
     {
-        return view('Edit.listcase');
+        return view('Edit.ListCase');
     }
 
     public function detail_coc()
     {
-        return view('Detail.coc');
+        return view('Detail.Coc');
     }
 
     public function print_coc()
     {
-        return view('Print.coc');
+        return view('Print.Coc');
     }
 
     public function ba_akuisisi()
     {
-        return view('Print.ba');
+        return view('Print.Ba');
     }
 
     public function akuisisi()
     {
-        return view('Dashboard.akuisisi');
+        return view('Dashboard.Akuisisi');
     }
 
     public function search_ba()
