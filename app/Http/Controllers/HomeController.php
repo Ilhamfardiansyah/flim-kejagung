@@ -53,7 +53,7 @@ class HomeController extends Controller
 
     public function detail()
     {
-        return view('Dashboard.detail');
+        return view('Dashboard.Detail');
     }
 
     public function daftar_kasus()
