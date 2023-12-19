@@ -28,7 +28,7 @@ class HomeController extends Controller
 
     public function form_regis()
     {
-        return view('Dashboard.formregis');
+        return view('Dashboard.FormRegis');
     }
 
     public function form_list()
