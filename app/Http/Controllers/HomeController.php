@@ -38,7 +38,7 @@ class HomeController extends Controller
 
     public function regist()
     {
-        return view('Dashboard.Regist');
+        return view('Dashboard.regist');
     }
 
     public function coc()
