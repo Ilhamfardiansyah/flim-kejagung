@@ -63,7 +63,7 @@ class HomeController extends Controller
 
     public function edit_regist()
     {
-        return view('Dashboard.Detail');
+        return view('Dashboard.detail');
     }
 
     public function detail_list()
