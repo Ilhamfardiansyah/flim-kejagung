@@ -43,7 +43,7 @@ class HomeController extends Controller
 
     public function coc()
     {
-        return view('Dashboard.Coc');
+        return view('Dashboard.coc');
     }
 
     public function print()
