@@ -28,8 +28,8 @@
                                     <th class="sort" data-sort="case">No</th>
                                     <th class="sort" data-sort="total">No. BBE</th>
                                     <th class="sort" data-sort="tanggal">Barang Bukti Elektronik</th>
-                                    <th class="sort" data-sort="status">Foto Depan</th>
-                                    <th class="sort" data-sort="progres">Foto Belakang</th>
+                                    <th class="sort" data-sort="status">Dikuasai Oleh</th>
+                                    <th class="sort" data-sort="progres">Disita Dari</th>
                                     <th class="sort" data-sort="action">Action</th>
                                 </tr>
                             </thead>
