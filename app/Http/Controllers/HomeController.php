@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('Dashboard.Index');
+        return view('Dashboard.index');
     }
 
     public function form_regis()
