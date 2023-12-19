@@ -68,7 +68,7 @@ class HomeController extends Controller
 
     public function detail_list()
     {
-        return view('Detail.detaillist');
+        return view('Detail.DetailList');
     }
 
     public function search()
