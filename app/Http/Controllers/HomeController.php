@@ -83,7 +83,7 @@ class HomeController extends Controller
 
     public function detail_listcase()
     {
-        return view('Detail.listcase');
+        return view('Detail.ListCase');
     }
 
     public function edit_listcase()
