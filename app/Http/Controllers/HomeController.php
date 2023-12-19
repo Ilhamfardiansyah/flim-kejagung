@@ -123,7 +123,7 @@ class HomeController extends Controller
 
     public function foto()
     {
-        return view('Detail.foto');
+        return view('Detail.Foto');
     }
 
 }
