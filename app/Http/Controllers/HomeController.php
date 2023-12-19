@@ -58,7 +58,7 @@ class HomeController extends Controller
 
     public function daftar_kasus()
     {
-        return view('Dashboard.daftarkasus');
+        return view('Dashboard.DaftarKasus');
     }
 
     public function edit_regist()
