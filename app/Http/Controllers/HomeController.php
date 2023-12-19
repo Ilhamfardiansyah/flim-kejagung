@@ -48,7 +48,7 @@ class HomeController extends Controller
 
     public function print()
     {
-        return view('Print.cetakanregistrasi');
+        return view('Print.CetakanRegistrasi');
     }
 
     public function detail()
