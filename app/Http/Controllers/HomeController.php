@@ -28,27 +28,27 @@ class HomeController extends Controller
 
     public function form_regis()
     {
-        return view('Dashboard.FormRegis');
+        return view('Dashboard.formregis');
     }
 
     public function form_list()
     {
-        return view('Dashboard.FormList');
+        return view('Dashboard.formlist');
     }
 
     public function regist()
     {
-        return view('Dashboard.Regist');
+        return view('Dashboard.regist');
     }
 
     public function coc()
     {
-        return view('Dashboard.Coc');
+        return view('Dashboard.coc');
     }
 
     public function print()
     {
-        return view('Print.CetakanRegistrasi');
+        return view('Print.cetakanregistrasi');
     }
 
     public function detail()
@@ -58,7 +58,7 @@ class HomeController extends Controller
 
     public function daftar_kasus()
     {
-        return view('Dashboard.DaftarKasus');
+        return view('Dashboard.daftarkasus');
     }
 
     public function edit_regist()
@@ -68,7 +68,7 @@ class HomeController extends Controller
 
     public function detail_list()
     {
-        return view('Detail.DetailList');
+        return view('Detail.detaillist');
     }
 
     public function search()
@@ -83,32 +83,32 @@ class HomeController extends Controller
 
     public function detail_listcase()
     {
-        return view('Detail.ListCase');
+        return view('Detail.listcase');
     }
 
     public function edit_listcase()
     {
-        return view('Edit.ListCase');
+        return view('Edit.listcase');
     }
 
     public function detail_coc()
     {
-        return view('Detail.Coc');
+        return view('Detail.coc');
     }
 
     public function print_coc()
     {
-        return view('Print.Coc');
+        return view('Print.coc');
     }
 
     public function ba_akuisisi()
     {
-        return view('Print.Ba');
+        return view('Print.ba');
     }
 
     public function akuisisi()
     {
-        return view('Dashboard.Akuisisi');
+        return view('Dashboard.akuisisi');
     }
 
     public function search_ba()
@@ -123,7 +123,7 @@ class HomeController extends Controller
 
     public function foto()
     {
-        return view('Detail.Foto');
+        return view('Detail.foto');
     }
 
 }
